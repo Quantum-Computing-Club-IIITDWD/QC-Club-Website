@@ -15,6 +15,10 @@ def team(request):
     return render(request, 'teamPages/team.html')
 
 
+def resources(request):
+    return render(request, 'resources.html')
+
+
 def team_technical(request):
     return render(request, 'teamPages/team_technical.html')
 
