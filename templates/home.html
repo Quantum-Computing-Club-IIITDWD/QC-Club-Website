@@ -23,8 +23,8 @@
 {% block home %}text-[#F9C56A] text-4xl font-medium max-md:text-xl{% endblock home %}
 {% block content %}
 <div class="ml-[7.5%] flex justify-center items-center mt-10" id="main">
-    <div class="w-[50%]">
-        <h1 class="text-white text-6xl font-bold">Leap into next age <br>of <span class="text-[#F9C56A]">computing</span> today!</h1>
+    <div class="w-[50%] max-md:w-[95%] max-md:mr-[5%]">
+        <h1 class="text-white text-6xl font-bold max-md:text-5xl">Leap into next age <br>of <span class="text-[#F9C56A]">computing</span> today!</h1>
         <p class="text-x pt-4 font-medium text-[#D5D5D5]">From revolutionising finance and healthcare to optimising logistics and enhancing
             cybersecurity, <span class="text-[#F9C56A] font-medium">Quantum Computing</span> is set to reshape the world, unlocking limitless potential for innovation and advancement.
         </p>
@@ -36,23 +36,23 @@
                 <p>Explore QC Club</p>
             </div>
         </div>
-        <div class="flex mt-4 ml-4 gap-3 text-white text-xl">
-            <a href=""><div class="p-1 rounded-full px-[0.65rem] pt-2 hover:bg-[#F9C56A] hover:text-black bg-[#252525]"><i class="fa-brands fa-twitter"></i></div></a>
-            <a href=""><div class="p-1 rounded-full px-[0.85rem] pt-2 hover:bg-[#F9C56A] hover:text-black bg-[#252525]"><i class="fa-brands fa-facebook-f"></i></div></a>
-            <a href=""><div class="p-1 rounded-full px-3 font-bold pt-2 hover:bg-[#F9C56A] hover:text-black bg-[#252525]"><i class="fa-brands fa-bold fa-instagram"></i></div></a>
-            <a href=""><div class="p-1 rounded-full px-[0.65rem] pt-2 hover:bg-[#F9C56A] hover:text-black bg-[#252525]"><i class="fa-brands fa-github"></i></div></a>
+        <div class="flex mt-4 ml-4 gap-3 text-white text-xl max-md:ml-[25%]">
+            <a href=""><div class="p-1 rounded-full px-[0.65rem] py-2 hover:bg-[#F9C56A] hover:text-black bg-[#252525]"><img class="w-[20px] h-[25px] " src="{% static "images/facebook.png" %}" alt=""></div></a>
+            <a href=""><div class="p-1 rounded-full px-[0.75rem] py-2 hover:bg-[#F9C56A] hover:text-black bg-[#252525]"><img class="w-[20px] h-[25px] " src="{% static "images/twitter.png" %}" alt=""></div></a>
+            <a href="https://www.instagram.com/qciiitdwd/"><div class="p-1 rounded-full px-2 font-bold py-2 hover:bg-[#F9C56A] hover:text-black bg-[#252525]"><img class="w-[25px] h-[25px] " src="{% static "images/instagram.png" %}" alt=""></div></a>
+            <a href=""><div class="p-1 rounded-full px-[0.5rem] py-2 hover:bg-[#F9C56A] hover:text-black bg-[#252525]"><img class="w-[25px] h-[25px] " src="{% static "images/github.png" %}" alt=""></div></a>
         </div>
     </div>
     <div>
-        <img class="w-[35rem]" src="{% static 'images/QuantumComputing.png' %}" alt="">
+        <img class="w-[35rem] max-md:hidden" src="{% static 'images/QuantumComputing.png' %}" alt="">
     </div>
 </div>
-<div class="mx-[10%] text-white mt-8">
+<div class="mx-[10%] text-white mt-8 max-md:hidden">
     <div class="flex justify-around container py-14 rounded-full z-auto">
     </div>
 </div>
-<div class="mx-[10%] text-white -mt-[7rem]">
-    <div class="flex justify-around  py-8 rounded-full z-auto">
+<div class="mx-[10%] text-white -mt-[7rem] max-md:hidden">
+    <div class="flex justify-around py-8 rounded-full z-auto">
         <div class="flex items-center item">
             <p class="text-6xl font-bold">200+</p>
             <p class="font-light ml-2">Quantum Computing <br>resources</p>
@@ -67,11 +67,11 @@
         </div>
     </div>
 </div>
-<div class="mr-[10%] mt-16 flex items-center">
-    <div class="w-[50%]">
+<div class="mr-[10%] mt-16 flex items-center max-md:flex-col">
+    <div class="w-[50%] max-md:w-[100%]">
         <img class="" src="{% static 'images/quantumMachine.png' %}" alt="">
     </div>
-    <div class="-ml-20 w-[50%]">
+    <div class="-ml-20 w-[50%] max-md:w-[95%] max-md:ml-10">
         <p class="text-white text-6xl font-bold">What our <span class="text-[#F9C56A]">club</span> does?</p>
         <p class="text-[#d5d5d5] mt-4 font-medium text-lg">"Welcome to our 
             Quantum Computing Club, where we explore the fascinating world of 
@@ -90,7 +90,7 @@
 <div class="text-center my-10">
     <h1 class="text-5xl text-white font-bold"><span class="text-[#F9C56A]">QC Club</span> Blogs</h1>
 </div>
-<div class="ml-[10%] overflow-x-auto flex gap-12">
+<div class="ml-[10%] overflow-x-auto flex gap-12 max-md:ml-4">
     {% comment %} each div is for each blog {% endcomment %}
     <a target="#" href="https://blog-qc-club.netlify.app/quantum-computer-the-next-big-leap">
         <div class="rounded-3xl w-[30rem]">
@@ -139,7 +139,7 @@
 <div class="text-center mb-10 mt-16">
     <h1 class="text-5xl text-white font-bold"><span class="text-[#F9C56A]">QC Club</span> Events</h1>
 </div>
-<div class="ml-[10%] overflow-x-auto flex gap-12">
+<div class="ml-[10%] overflow-x-auto flex gap-12 max-md:ml-4">
     {% comment %} each div is for each event {% endcomment %}
     <div class="rounded-3xl w-[30rem]">
         <div class=" overflow-y-hidden">
